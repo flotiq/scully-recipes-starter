@@ -1,18 +1,38 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
-import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { environment } from '../environments/environment';
+import { HttpClientModule } from '@angular/common/http';
+import { ApiModule, Configuration, ConfigurationParameters } from 'flotiq';
+import { RecipeModule } from './recipe/recipe.module';
+import { AppRoutingModule } from './app-routing.module';
+import { ScullyLibModule } from '@scullyio/ng-lib';
+import { AboutComponent } from './about/about.component';
+
+export function apiConfigFactory(): Configuration {
+  const params: ConfigurationParameters = {
+    apiKeys: {'X-AUTH-TOKEN': environment.flotiqApiKey}
+  };
+  return new Configuration(params);
+}
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    AboutComponent,
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    ApiModule.forRoot(apiConfigFactory),
+    HttpClientModule,
+    RecipeModule,
+    AppRoutingModule,
+    ScullyLibModule,
   ],
   providers: [],
+  exports: [
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

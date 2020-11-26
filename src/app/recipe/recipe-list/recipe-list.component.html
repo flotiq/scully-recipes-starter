@@ -1,0 +1,30 @@
+<section class="post-feed">
+  <div *ngFor="let recipe of recipes">
+
+    <a class="post-card" href="recipe/{{recipe.slug}}">
+      <header class="post-card-header">
+        <div class="post-card-image" *ngIf="recipe.image[0]"
+             style="background-image: url('{{'https://api.flotiq.com/image/286x180/' + recipe.image[0].id}}.{{recipe.image[0].extension}}');">
+        </div>
+        <h2 class="post-card-title">{{ recipe.name }}</h2></header>
+      <section class="post-card-tags">
+        <div>
+          <img class="post-card-tag-icon" alt="Servings" src="assets/images/user-solid.svg">
+          {{ recipe.servings }}
+        </div>
+        <div>
+          <img class="post-card-tag-icon" alt="Cooking time" src="assets/images/clock-regular.svg">
+          {{ recipe.cookingTime}}
+        </div>
+      </section>
+      <footer class="post-card-footer">
+        <div class="post-card-footer-left"></div>
+        <div class="post-card-footer-right"></div>
+      </footer>
+    </a>
+  </div>
+</section>
+<nav class="pagination" role="navigation">
+  <div></div>
+  <div></div>
+</nav>
