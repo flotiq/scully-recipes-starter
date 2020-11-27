@@ -7,7 +7,7 @@ Scully Starter - Recipes
 
 This is a [Scully](https://scully.io/) starter project for a recipes website. It's configured to pull recipes data from [Flotiq](https://flotiq.com) and can be easily deployed to your cloud hosting - Heroku, Netlify, etc.
 
-Live Demo: https://competent-visvesvaraya-bb732c.netlify.app/
+Live Demo: https://vibrant-mclean-8da635.netlify.app/
 
 Screenshot
 
