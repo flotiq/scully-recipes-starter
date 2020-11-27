@@ -27,7 +27,7 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 
    Create your [Flotiq.com](https://flotiq.com) account. Next, create the `Recipe` Content Type:
 
-   ![Product content type in flotiq](docs/create-definition.png)
+   ![Recipe content type in flotiq](docs/create-definition.png)
     
    _Note: You can also create `Recipe` using [Flotiq REST API](https://flotiq.com/docs/API/)._ 
 
@@ -57,7 +57,7 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
     
     It will add 10 images and 4 recipes to your Flotiq account.
         
-    _Note: You need to put your Read and write API key in `src/environments/environment.js` for import to work. You don't need Recipe content type in your account. If you already have products with ids `product-1`, `product-2`, `product-3` and `product-4` they will be overwritten._
+    _Note: You need to put your Read and write API key in `src/environments/environment.js` for import to work. You don't need Recipe content type in your account. If you already have recipes with ids `recipe-1`, `recipe-2` they will be overwritten._
 
     Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
 
@@ -79,7 +79,7 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
       
     You can now easily manage your recipes using [Flotiq editor](https://editor.flotiq.com)
     
-    ![Managing products using Flotiq](docs/manage-recipes.png)
+    ![Managing recipes using Flotiq](docs/manage-recipes.png)
 
 ### Running unit tests
 
@@ -97,7 +97,7 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 
   You can deploy this project to Netlify in 3 minutes:
   
-  [![Deploy](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/flotiq/scully-products-starter)
+  [![Deploy](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/flotiq/scully-recipes-starter)
 
 
 ## Collaborating
