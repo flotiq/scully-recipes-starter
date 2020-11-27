@@ -8,7 +8,7 @@ export const config: ScullyConfig = {
     '/recipe/:slug': {
       type: 'json',
       slug: {
-        url: 'https://api.flotiq.com/api/v1/content/recipe',
+        url: 'https://api.flotiq.com/api/v1/content/recipe?hydrate=1',
         property: 'slug',
         headers: {
           'X-AUTH-TOKEN': environment.flotiqApiKey
@@ -19,7 +19,7 @@ export const config: ScullyConfig = {
     '/:page': {
       type: 'json',
       page: {
-        url: 'https://api.flotiq.com/api/v1/content/recipe?page=1&limit=8',
+        url: 'https://api.flotiq.com/api/v1/content/recipe?page=1&limit=8&hydrate=1',
         property: 'page',
         headers: {
           'X-AUTH-TOKEN': environment.flotiqApiKey
