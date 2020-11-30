@@ -37,11 +37,7 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
     
     In `src/environments/environment.prod.ts` and in `src/environments/environment.js` change `YOUR_FLOTIQ_API_KEY` to Read only Flotiq API key.
     
-    If you wish to import example data into your account change `YOUR_FLOTIQ_API_KEY` on line 17 in `.flotiq/importExample.js` to Read and write API KEY.
-    
     Remember to change them back to `YOUR_FLOTIQ_API_KEY` before committing code to repository.
-    
-    You have to also change `SNIPCART_API_KEY` to your Snipcart public API KEY in `src/environments/environment.prod.ts` and in `src/environments/environment.js` to enable cart functionality.
     
 1.  **Start developing**
 
@@ -49,13 +45,13 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
         cd scully-recipes-starter/
         npm install
     ```
-    If you wish to import example recipes to your account run:
+    If you wish to import example recipes to your account install [flotiq-cli](https://github.com/flotiq/flotiq-cli), and run in project directory:
             
     ```sh
-        node ./.flotiq/importExample.js
+        flotiq import [flotiqApiKey] .
     ```
     
-    It will add 10 images and 4 recipes to your Flotiq account.
+    It will add 4 images and 2 recipes to your Flotiq account.
         
     _Note: You need to put your Read and write API key in `src/environments/environment.js` for import to work. You don't need Recipe content type in your account. If you already have recipes with ids `recipe-1`, `recipe-2` they will be overwritten._
 
