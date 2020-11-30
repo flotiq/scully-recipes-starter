@@ -17,4 +17,6 @@ install:
   - npm install
 
 script:
-  - npm run test -- --no-watch --no-progress --browsers=ChromeHeadlessCI
+  - sh build.sh
+  - npm run build --prod
+  - npm run scully -- --scanRoutes
