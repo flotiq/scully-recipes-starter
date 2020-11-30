@@ -11,7 +11,7 @@ Live Demo: https://vibrant-mclean-8da635.netlify.app/
 
 Screenshot
 
-<img src="https://github.com/flotiq/scully-recipes-starter/raw/master/docs/flotiq-starter-recipes.png" width=480 />
+<img src="https://github.com/flotiq/scully-recipes-starter/raw/master/docs/Scully-Recipes-Starter.png" width=480 />
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 11.0.2.
 
@@ -27,7 +27,7 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 
    Create your [Flotiq.com](https://flotiq.com) account. Next, create the `Recipe` Content Type:
 
-   ![Recipe content type in flotiq](docs/create-definition.png)
+   ![Recipe content type in flotiq](docs/Scully-Recipes-Starter-CTD.png)
     
    _Note: You can also create `Recipe` using [Flotiq REST API](https://flotiq.com/docs/API/)._ 
 
@@ -79,7 +79,7 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
       
     You can now easily manage your recipes using [Flotiq editor](https://editor.flotiq.com)
     
-    ![Managing recipes using Flotiq](docs/manage-recipes.png)
+    ![Managing recipes using Flotiq](docs/Scully-Recipes-Starter-Edit.png)
 
 ### Running unit tests
 
