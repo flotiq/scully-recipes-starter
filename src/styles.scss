@@ -1169,3 +1169,10 @@ h6 {
   align-items: center;
   cursor: pointer;
 }
+.pagination {
+  margin: auto;
+  margin-top: 30px;
+  ul {
+    list-style: none;
+  }
+}
