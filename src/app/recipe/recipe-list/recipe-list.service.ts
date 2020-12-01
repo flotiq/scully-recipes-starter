@@ -16,7 +16,7 @@ export class RecipeListService {
   getRecipes(page): Observable<RecipeList> {
     return this.transferState.useScullyTransferState(
       'recipes' + page,
-      this.flotiqService.listRecipe(page, 8, 'internal.createdAt', 'desc', 1)
+      this.flotiqService.listRecipe(page, 6, 'internal.createdAt', 'desc', 1)
     );
   }
 }

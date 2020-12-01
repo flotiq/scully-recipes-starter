@@ -3,7 +3,7 @@
 
     <a class="post-card" href="recipe/{{recipe.slug}}">
       <header class="post-card-header">
-        <div class="post-card-image" *ngIf="recipe.image[0]"
+        <div class="post-card-image" *ngIf="recipe.image && recipe.image[0]"
              style="background-image: url('{{'https://api.flotiq.com/image/286x180/' + recipe.image[0].id}}.{{recipe.image[0].extension}}');">
         </div>
         <h2 class="post-card-title">{{ recipe.name }}</h2></header>
@@ -24,7 +24,19 @@
     </a>
   </div>
 </section>
-<nav class="pagination" role="navigation">
-  <div></div>
-  <div></div>
+<section>
+<nav class="pagination" *ngIf="totalPages > 1">
+  <ul class="pagination justify-content-center">
+    <li class="page-item" [ngClass]="{ 'disabled': page === 1 }">
+      <a routerLink="/{{page - 1}}" class="page-link">Previous</a>
+    </li>
+    <li class="page-item" *ngFor="let pageNumber of [].constructor(totalPages); let i = index"
+        [ngClass]="{ 'active': page === i+1 }" >
+      <a routerLink="/{{i + 1}}" class="page-link">{{i + 1}}</a>
+    </li>
+    <li class="page-item" [ngClass]="{ 'disabled': page === totalPages }">
+      <a routerLink="/{{page + 1}}" class="page-link">Next</a>
+    </li>
+  </ul>
 </nav>
+</section>

@@ -1,6 +1,6 @@
 <article class="content" *ngIf="recipe">
-  <figure class="post-feature-image"><img
-    src="{{'https://api.flotiq.com/image/966x406/' + recipe.image[0].id }}.{{recipe.image[0].extension}}" alt="Scrambled eggs">
+  <figure class="post-feature-image" *ngIf="recipe.image && recipe.image[0]">
+    <img src="{{'https://api.flotiq.com/image/966x406/' + recipe.image[0].id }}.{{recipe.image[0].extension}}" alt="{{ recipe.name }}">
   </figure>
   <section class="post-full-content">
     <h1 class="content-title">
@@ -26,7 +26,7 @@
       <p></p>
     </section>
     <h2 class="content-title">Steps</h2>
-    <section class="content-body" *ngIf="recipe.steps.length" >
+    <section class="content-body" *ngIf="recipe.steps && recipe.steps.length" >
       <div class="recipe-step"  *ngFor="let step of recipe.steps; let i = index">
         <div class="recipe-step-index">
           <div>{{ i + 1 }}</div>
