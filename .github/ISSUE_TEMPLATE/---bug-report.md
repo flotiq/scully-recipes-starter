@@ -4,7 +4,7 @@ about: Report reproducible software issues so we can improve
 
 ---
 
-Welcome to the Scully Starter Flotiq blog GitHub repo!
+Welcome to the Scully Starter Flotiq recipe GitHub repo!
 
 For support, help, questions, requests and ideas use https://discord.gg/FwXcHnX
 
