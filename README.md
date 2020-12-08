@@ -53,7 +53,7 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
     
     It will add 4 images and 2 recipes to your Flotiq account.
         
-    _Note: You need to put your Read and write API key in `src/environments/environment.js` for import to work. You don't need Recipe content type in your account. If you already have recipes with ids `recipe-1`, `recipe-2` they will be overwritten._
+    _Note: You don't need Recipe content type in your account. If you already have recipes with ids `recipe-1`, `recipe-2` they will be overwritten._
 
     Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
 
