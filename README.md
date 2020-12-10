@@ -53,13 +53,13 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
     
     It will add 4 images and 2 recipes to your Flotiq account.
         
-    _Note: You don't need Recipe content type in your account. If you already have recipes with ids `recipe-1`, `recipe-2` they will be overwritten._
+    _Note: You need to put your Read and write API key as the `flotiqApiKey` for import to work. You don't need the `Recipe` content type in your account. If you already have recipes with ids `recipe-1`, `recipe-2` they will be overwritten._
 
-    Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+    Run `ng run start` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
 
     If you wish to add new elements to the project run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
 
-    Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+    Run `npm run build:prod` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
     
     To build the static version with Scully run:
     
@@ -77,13 +77,13 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
     
     ![Managing recipes using Flotiq](docs/Scully-Recipes-Starter-Edit.png)
 
-### Running unit tests
+1. **Update Flotiq Angular SDK when you create or update Type Definition**
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-### Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
+    Everytime you change something in your Content Type Definitions, you have to regenerate Flotiq Angular Package inside project.
+    1. Go to your dashboard in Flotiq, and click on Angular icon in "Your API packages" section, to download an SDK with the updated content of your schema.
+    ![Downloading Angular SDK](docs/Dashboard-package.png)
+    2. Extract downloaded zip in `flotiq` directory in the project.
+    3. Done, you have updated Flotiq Angular SDK in your project!
 
 ### Further help with Angular
 
