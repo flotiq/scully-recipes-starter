@@ -48,7 +48,7 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
     If you wish to import example recipes to your account install [flotiq-cli](https://github.com/flotiq/flotiq-cli), and run in project directory:
             
     ```sh
-        flotiq import [flotiqApiKey] .
+        flotiq import . [flotiqApiKey]
     ```
     
     It will add 4 images and 2 recipes to your Flotiq account.
